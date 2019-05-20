@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Attach to gdbserver",
+            "executable": "main.elf",
+            "target": "localhost:4242",
+            "remote": true,
+            "autorun": ["monitor interface=0"],
+            "cwd": "${workspaceRoot}/out/hexbin/"
+        }]
+}
